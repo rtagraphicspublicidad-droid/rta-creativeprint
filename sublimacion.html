@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sublimación - RTA CREATIVE PRINT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="HTML.html" style="color: inherit; text-decoration: none;">RTA CREATIVE PRINT</a></div>
+        <nav>
+            <ul>
+                <li><a href="litografia.html">Litografía</a></li>
+                <li><a href="pendones.html">Pendones</a></li>
+                <li><a href="vinilo.html">Vinilo</a></li>
+                <li><a href="calcas.html">Calcas</a></li>
+                <li><a href="sublimacion.html">Sublimación y Estampado</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pricing" class="fade-in">
+            <h2 style="color: #ff0015; text-align: center; margin-bottom: 30px;">Nuestras Tarifas - Sublimación</h2>
+            
+            <h3>Productos de Sublimación Calidad AAA</h3>
+            <div style="overflow-x: auto;">
+                <table class="tabla-sublimacion">
+                    <thead>
+                        <tr style="background-color: #ff0015; color: white;">
+                            <th style="padding: 15px;">Producto</th>
+                            <th style="padding: 15px;">Unidad</th>
+                            <th style="padding: 15px;">Docena (c/u)</th>
+                            <th style="padding: 15px;">Caja completa (36 und)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pocillos sublimados blancos (mayor durabilidad)</td>
+                            <td>$15.000</td>
+                            <td>$12.000</td>
+                            <td>$10.000</td>
+                        </tr>
+                        <tr>
+                            <td>Pocillos mágicos sublimados</td>
+                            <td>$30.000</td>
+                            <td>$27.000</td>
+                            <td>$25.000</td>
+                        </tr>
+                        <tr>
+                            <td>Termos de sublimación metálicos (caramañolas)</td>
+                            <td>$25.000</td>
+                            <td>$22.000</td>
+                            <td>$20.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p style="margin-top: 20px;"><small>Valores no incluyen diseño ni ajustes de diseño.</small></p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="contenedor-negro">
+            <img src="IMAGENES/INFERIOR NEGRO.png" alt="Fondo Inferior Negro" class="inferior-negro">
+            <p>Conócenos en nuestras redes sociales y comunícate por WhatsApp Business para una atención directa y personalizada.</p>
+            <div class="social-links">
+                <a href="https://wa.me/573025470037" target="_blank" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/rta_graphics/?hl=es" target="_blank" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61577686666335" target="_blank" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@rta_graphics" target="_blank" class="social-icon" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p>Gmail: rta.graphics.publicidad@gmail.com</p>
+        </div>
+    </footer>
+
+    <div id="chat-button" onclick="toggleChat()">
+        <span style="font-size: 30px; color: white;">💬</span>
+    </div>
+    <div id="chat-window" class="chat-hidden">
+        <div class="chat-header">
+            <h3 style="margin: 0; font-size: 1.1rem;">Asistente RTA</h3>
+            <button onclick="toggleChat()" style="background: none; border: none; color: white; cursor: pointer; font-size: 1.2rem;">✖</button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <p style="background: #e9e9e9; padding: 10px; border-radius: 10px; margin: 0; font-size: 0.9rem;">¡Hola! Me llamo Esan, asistente virtual de Rta Creative Print. ¿En qué te puedo ayudar el día de hoy?</p>
+            <div id="chat-options" class="chat-options">
+                <button class="option-btn" onclick="handleOption('servicios')">Nuestros servicios</button>
+                <button class="option-btn" onclick="handleOption('cotizar')">Cotizar un proyecto</button>
+                <button class="option-btn" onclick="handleOption('faq')">Preguntas frecuentes</button>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Escribe tu consulta aquí..." id="user-input">
+            <button id="send-btn" style="background: #ff0015; border: none; color: white; padding: 5px 10px; border-radius: 5px; cursor: pointer;">➤</button>
+        </div>
+    </div>
+
+    <script src="APP.js"></script>
+</body>
+</html>

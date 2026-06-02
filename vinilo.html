@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinilo - RTA CREATIVE PRINT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="HTML.html" style="color: inherit; text-decoration: none;">RTA CREATIVE PRINT</a></div>
+        <nav>
+            <ul>
+                <li><a href="litografia.html">Litografía</a></li>
+                <li><a href="pendones.html">Pendones</a></li>
+                <li><a href="vinilo.html">Vinilo</a></li>
+                <li><a href="calcas.html">Calcas</a></li>
+                <li><a href="sublimacion.html">Sublimación y Estampado</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pricing" class="fade-in">
+            <h2 style="color: #ff0015; text-align: center;">Nuestras Tarifas - Vinilo</h2>
+            
+            <h3>Vinilo</h3>
+            <table>
+                <tr>
+                    <th>Medidas</th>
+                    <th>Sin Laminar</th>
+                    <th>Laminado con Vinilo Transparente</th>
+                </tr>
+                <tr>
+                    <td>Medio Pliego (70x50cm)</td>
+                    <td>$18.000</td>
+                    <td>$23.000</td>
+                </tr>
+                <tr>
+                    <td>Pliego (70x100cm)</td>
+                    <td>$30.000</td>
+                    <td>$40.000</td>
+                </tr>
+            </table>
+            <p><small>Valores no incluyen diseño ni ajustes de diseño.</small></p>
+
+            <h3>Stickers</h3>
+            <table>
+                <tr>
+                    <th>Medida del pliego</th>
+                    <th>Sin corte y sin laminar</th>
+                    <th>Sin corte laminado</th>
+                    <th>Con corte sin laminar</th>
+                    <th>Con corte con laminado</th>
+                </tr>
+                <tr>
+                    <td>Pliego (70x100cm )</td>
+                    <td>$30.000</td>
+                    <td>$40.000</td>
+                    <td>$45.000</td>
+                    <td>$55.000</td>
+                </tr>
+            </table>
+            <p><small>Valores no incluyen diseño ni ajustes de diseño.</small></p>
+
+            <div class="info-laminado">
+                <p>
+                    El laminado consiste en aplicar una capa de vinilo transparente sobre el material impreso. Este acabado ayuda a proteger la impresión contra rayones, humedad y desgaste diario, aumentando su durabilidad. 
+                    Además, permite que la superficie sea resistente al agua y fácil de limpiar sin afectar la calidad del diseño.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="contenedor-negro">
+            <img src="IMAGENES/INFERIOR NEGRO.png" alt="Fondo Inferior Negro" class="inferior-negro">
+            <p>Conócenos en nuestras redes sociales y comunícate por WhatsApp Business para una atención directa y personalizada.</p>
+            <div class="social-links">
+                <a href="https://wa.me/573025470037" target="_blank" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/rta_graphics/?hl=es" target="_blank" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61577686666335" target="_blank" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@rta_graphics" target="_blank" class="social-icon" title="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p>Gmail: rta.graphics.publicidad@gmail.com</p>
+        </div>
+    </footer>
+
+    <!-- Estructura del Chatbot -->
+    <div id="chat-button" onclick="toggleChat()">
+        <span style="font-size: 30px; color: white;">💬</span>
+    </div>
+    <div id="chat-window" class="chat-hidden">
+        <div class="chat-header">
+            <h3 style="margin: 0; font-size: 1.1rem;">Asistente RTA</h3>
+            <button onclick="toggleChat()" style="background: none; border: none; color: white; cursor: pointer; font-size: 1.2rem;">✖</button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <p style="background: #e9e9e9; padding: 10px; border-radius: 10px; margin: 0; font-size: 0.9rem;">¡Hola! Me llamo Esan, asistente virtual de Rta Creative Print. ¿En qué te puedo ayudar el día de hoy?</p>
+            <div id="chat-options" class="chat-options">
+                <button class="option-btn" onclick="handleOption('servicios')">Nuestros servicios</button>
+                <button class="option-btn" onclick="handleOption('cotizar')">Cotizar un proyecto</button>
+                <button class="option-btn" onclick="handleOption('faq')">Preguntas frecuentes</button>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="Escribe tu consulta aquí..." id="user-input">
+            <button id="send-btn" style="background: #ff0015; border: none; color: white; padding: 5px 10px; border-radius: 5px; cursor: pointer;">➤</button>
+        </div>
+    </div>
+
+    <script src="APP.js"></script>
+</body>
+</html>
